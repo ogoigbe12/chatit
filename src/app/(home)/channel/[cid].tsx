@@ -20,7 +20,12 @@ export default function ChannelScreen() {
   },[cid])
 
   if (!channel) {
-    return <ActivityIndicator/>
+    // return <ActivityIndicator/>
+    return (
+      <View style={{flex: 1, justifyContent: 'center'}}>
+  <ActivityIndicator/>
+  </View>
+)
   }
   return (
     <Channel channel={channel}>
